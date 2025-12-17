@@ -1,0 +1,30 @@
+// Edit ini sebelum publish (testnet / mainnet)
+window.GOBOG_CONFIG = {
+  // Basic
+  TWITTER: "@gobog",
+  TWITTER_URL: "https://twitter.com/gobog",
+
+  // Network
+  CHAIN_ID: 97, // 97 = BSC Testnet, 56 = BSC Mainnet
+  CHAIN_NAME: "BNB Smart Chain Testnet",
+  RPC_URL: "https://bsc-testnet-dataseed.bnbchain.org",
+
+  // Explorer base
+  EXPLORER_BASE: "https://testnet.bscscan.com",
+
+  // Contracts (ISI dengan address deploy kamu)
+  TOKEN_ADDRESS: "0x8D460AadBCAa46E88b701375BAeAf4162d9ccD29",
+  PRESALE_ADDRESS: "0x14FCf9A0E81A13d0e7Bb40BFFB7FbF1FEBc56efA",
+  USDT_ADDRESS: "0xecB206362Fa104cC33EaFbfb941EbE0348A68791", // testnet: MockUSDT, mainnet: 0x55d398326f99059ff775485246999027b3197955
+
+  // Decimals
+  USDT_DECIMALS: 18,
+  TOKEN_DECIMALS: 18,
+
+  // Rate (fixed for UI display)
+  TOKENS_PER_1_USDT: 15
+};
+
+// Convenience links
+window.GOBOG_CONFIG.TOKEN_EXPLORER_URL = window.GOBOG_CONFIG.EXPLORER_BASE + "/address/" + window.GOBOG_CONFIG.TOKEN_ADDRESS;
+window.GOBOG_CONFIG.PRESALE_EXPLORER_URL = window.GOBOG_CONFIG.EXPLORER_BASE + "/address/" + window.GOBOG_CONFIG.PRESALE_ADDRESS;
